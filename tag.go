@@ -198,7 +198,6 @@ func TagGiveNewNames() {
 				charsPos[namePos] = 0
 			}
 		}
-		tags[nr].NewName = "osp-" + tags[nr].NewName
 	}
 
 	tagsMutex.Unlock()

@@ -113,3 +113,7 @@ You can get the available command line options with the **-h** switch.
 ## TODO
 
 - Rewriting name identifiers
+- If Javascript dynamically references to a tag like $('#page-' + pageName)
+  then this causes an error when running the code, if #page-... tag is
+  rewritten by the cruncher. Some kind of processing needs to be added to
+  ignore tags which are referenced like this.

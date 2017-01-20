@@ -21,4 +21,6 @@ function change2(test2) {
 function change3(test3) {
 	$('#test3.test2').val('test3');
 	$('.test3#test2').val('test3');
+	$('.page-test').val('test');
+	$('.page-' + something).val('test');
 }

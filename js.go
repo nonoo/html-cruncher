@@ -27,7 +27,7 @@ func JSLoad(wg *sync.WaitGroup, fileName string) {
 	matches := r.FindAllStringSubmatch(string(fileData), -1)
 
 	for _, s := range matches {
-		trimmedMatch := strings.Trim(s[2], "'\"")
+		trimmedMatch := strings.Trim(s[2], "'\"()")
 
 		switch s[1] {
 		case "getElementById":
